@@ -3,16 +3,14 @@
 <Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.3</Version>
+  <Version>4.12.2</Version>
   <Author>Pawel</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
     <Input Plugin="MIDI" Line="1"/>
-    <Output Plugin="E1.31" Line="5">
-     <PluginParameters UniverseChannels="8" mcastIP="1" multicast="1" priority="100" transmitMode="Full" universe="1"/>
-    </Output>
+    <Output Plugin="E1.31" Line="1"/>
     <Feedback Plugin="MIDI" Line="2"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
@@ -107,29 +105,29 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,0</FixtureVal>
   </Function>
-  <Function ID="2" Type="Scene" Name="New Scene 2">
+  <Function ID="2" Type="Scene" Name="1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255</FixtureVal>
+  </Function>
+  <Function ID="3" Type="Scene" Name="2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,255</FixtureVal>
+  </Function>
+  <Function ID="4" Type="Scene" Name="3">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">0,255</FixtureVal>
   </Function>
-  <Function ID="3" Type="Scene" Name="New Scene 3">
+  <Function ID="5" Type="Scene" Name="4">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="3">0,255</FixtureVal>
   </Function>
-  <Function ID="4" Type="Scene" Name="New Scene 4">
+  <Function ID="6" Type="Scene" Name="5">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">0,255</FixtureVal>
   </Function>
-  <Function ID="5" Type="Scene" Name="New Scene 5">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="5">0,255</FixtureVal>
-  </Function>
-  <Function ID="6" Type="Scene" Name="New Scene 6">
+  <Function ID="7" Type="Scene" Name="6">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="6">0,255</FixtureVal>
-  </Function>
-  <Function ID="7" Type="Scene" Name="New Scene 7">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="7">0,255</FixtureVal>
   </Function>
   <Function ID="8" Type="Show" Name="test">
    <TimeDivision Type="Time" BPM="120"/>
@@ -172,6 +170,14 @@
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="1" FadeOut="0" Values="1">1:0,255</Step>
   </Function>
+  <Function ID="14" Type="Scene" Name="7">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,255</FixtureVal>
+  </Function>
+  <Function ID="15" Type="Scene" Name="8">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">0,255</FixtureVal>
+  </Function>
  </Engine>
  <VirtualConsole>
   <Frame Caption="">
@@ -205,7 +211,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Function ID="0"/>
+    <Function ID="2"/>
     <Action>Flash</Action>
     <Key>Q</Key>
     <Intensity Adjust="False">100</Intensity>
@@ -220,7 +226,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Function ID="1"/>
+    <Function ID="3"/>
     <Action>Flash</Action>
     <Key>W</Key>
     <Intensity Adjust="False">100</Intensity>
@@ -235,7 +241,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Function ID="2"/>
+    <Function ID="4"/>
     <Action>Flash</Action>
     <Key>E</Key>
     <Intensity Adjust="False">100</Intensity>
@@ -250,7 +256,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Function ID="3"/>
+    <Function ID="5"/>
     <Action>Flash</Action>
     <Key>R</Key>
     <Intensity Adjust="False">100</Intensity>
@@ -264,7 +270,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Function ID="4"/>
+    <Function ID="6"/>
     <Action>Flash</Action>
     <Key>T</Key>
     <Intensity Adjust="False">100</Intensity>
@@ -278,7 +284,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Function ID="5"/>
+    <Function ID="7"/>
     <Action>Flash</Action>
     <Key>Y</Key>
     <Intensity Adjust="False">100</Intensity>
@@ -292,7 +298,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Function ID="6"/>
+    <Function ID="14"/>
     <Action>Flash</Action>
     <Key>U</Key>
     <Intensity Adjust="False">100</Intensity>
@@ -306,7 +312,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Function ID="7"/>
+    <Function ID="15"/>
     <Action>Flash</Action>
     <Key>I</Key>
     <Intensity Adjust="False">100</Intensity>
